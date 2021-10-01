@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.js": "/myug-captive-portal/static/js/main.d6531e11.chunk.js",
+    "main.js.map": "/myug-captive-portal/static/js/main.d6531e11.chunk.js.map",
+    "runtime-main.js": "/myug-captive-portal/static/js/runtime-main.4dc2f3b1.js",
+    "runtime-main.js.map": "/myug-captive-portal/static/js/runtime-main.4dc2f3b1.js.map",
+    "static/css/2.2bbe33c5.chunk.css": "/myug-captive-portal/static/css/2.2bbe33c5.chunk.css",
+    "static/js/2.75fd6996.chunk.js": "/myug-captive-portal/static/js/2.75fd6996.chunk.js",
+    "static/js/2.75fd6996.chunk.js.map": "/myug-captive-portal/static/js/2.75fd6996.chunk.js.map",
+    "index.html": "/myug-captive-portal/index.html",
+    "static/css/2.2bbe33c5.chunk.css.map": "/myug-captive-portal/static/css/2.2bbe33c5.chunk.css.map",
+    "static/js/2.75fd6996.chunk.js.LICENSE.txt": "/myug-captive-portal/static/js/2.75fd6996.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4dc2f3b1.js",
+    "static/css/2.2bbe33c5.chunk.css",
+    "static/js/2.75fd6996.chunk.js",
+    "static/js/main.d6531e11.chunk.js"
+  ]
+}
