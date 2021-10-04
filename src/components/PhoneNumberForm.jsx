@@ -1,22 +1,20 @@
-import React, { useState } from "react";
-import PhoneInput from "react-phone-input-2";
+import React from "react";
 import "react-phone-input-2/lib/style.css";
+import { useForm } from "react-hook-form";
 
 const PhoneNumberForm = () => {
-  const [phone, setPhone] = useState();
-  console.log(phone)
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+  const onSubmit = (data) => console.log(data);
   return (
-    <form>
+    <form onSubmit={handleSubmit(onSubmit)}>
       <div className="form-group first">
         <label>Enter Mobile No.</label>
-        <PhoneInput
-          country="ug"
-          onlyCountries={["ug"]}
-          value={phone}
-          countryCodeEditable={false}
-          onChange={(phone) => setPhone(phone)}
-          className="form-control"
-        />
+        <input className="form-control" {...register("phoneNumber", { required: true })}/>
+        <small className="warning">{errors.phoneNumber && <span>This field is required</span>}</small>
       </div>
       <div className="form-check">
         <input className="form-check-input" type="checkbox" value="" required />
@@ -24,14 +22,12 @@ const PhoneNumberForm = () => {
           I agree to the Terms and Conditions
         </label>
       </div>
-      <a href="paid_access.html">
-        <input
-          type="submit"
-          value="Continue"
-          className="btn btn-block btn-primary"
-          style={{ backgroundColor: "#e75480", marginTop: "4px" }}
-        />
-      </a>
+      <input
+        type="submit"
+        value="Continue"
+        className="btn btn-block btn-primary"
+        style={{ backgroundColor: "#e75480", marginTop: "4px" }}
+      />
     </form>
   );
 };
