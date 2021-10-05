@@ -4,13 +4,10 @@ import CaptiveLayout from "./components/layouts/CaptiveLayout";
 import LayoutRoute from "./components/routes/LayoutRoute";
 import TermsPage from "./pages/TermsPage";
 
-const getBasename = () => {
-  return `/${process.env.PUBLIC_URL.split("/").pop()}`;
-};
 
 function App() {
   return (
-    <BrowserRouter basename={public.env.PUBLIC_URL}>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Switch>
         <LayoutRoute
           exact
