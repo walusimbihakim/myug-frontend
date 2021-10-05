@@ -1,6 +1,7 @@
 import React from "react";
 import "react-phone-input-2/lib/style.css";
 import { useForm } from "react-hook-form";
+import { Link } from "react-router-dom";
 
 const PhoneNumberForm = () => {
   const {
@@ -19,7 +20,7 @@ const PhoneNumberForm = () => {
       <div className="form-check">
         <input className="form-check-input" type="checkbox" value="" required />
         <label className="form-check-label" for="flexCheckIndeterminate">
-          I agree to the Terms and Conditions
+          I agree to the <Link to="/terms">Terms and Conditions</Link>
         </label>
       </div>
       <input

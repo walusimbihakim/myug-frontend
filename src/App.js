@@ -1,16 +1,30 @@
-import LoginPage from "./pages/LoginPage";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import PhoneNumberPage from "./pages/PhoneNumberPage";
+import { BrowserRouter, Switch } from "react-router-dom";
+import CaptiveLayout from "./components/layouts/CaptiveLayout";
+import LayoutRoute from "./components/routes/LayoutRoute";
+import TermsPage from "./pages/TermsPage";
 
 const getBasename = () => {
-  return `/${process.env.PUBLIC_URL.split('/').pop()}`;
+  return `/${process.env.PUBLIC_URL.split("/").pop()}`;
 };
 
 function App() {
   return (
     <BrowserRouter basename={getBasename()}>
       <Switch>
-        <Route path="/" component={LoginPage} />
-        <Route exact path="/guest/s/:slug" component={LoginPage} />
+        <LayoutRoute
+          exact
+          path="/guest/s/default"
+          layout={CaptiveLayout}
+          component={(props) => <PhoneNumberPage {...props} />}
+        />
+
+        <LayoutRoute
+          exact
+          path="/terms"
+          layout={CaptiveLayout}
+          component={(props) => <TermsPage {...props} />}
+        />
       </Switch>
     </BrowserRouter>
   );
