@@ -10,7 +10,7 @@ const getBasename = () => {
 
 function App() {
   return (
-    <BrowserRouter basename={getBasename()}>
+    <BrowserRouter basename={public.env.PUBLIC_URL}>
       <Switch>
         <LayoutRoute
           exact
