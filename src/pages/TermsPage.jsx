@@ -1,6 +1,8 @@
 import React from 'react'
+import { useHistory } from 'react-router-dom';
 
 export default function TermsPage() {
+    const history = useHistory()
     return (
         <>
         <h2>Terms and Conditions</h2>
@@ -18,7 +20,9 @@ export default function TermsPage() {
             int fugiat dolorem ipsam accusamus quod officia debitis re
             m sed quia impedit quo neque?
         </div>
-        <button className="btn btn-block primaryButton">Back</button>
+        <button 
+              className="primaryButton btn btn-block" 
+              onClick={() => {history.goBack()}}>Back</button>
         </>
     )
 }

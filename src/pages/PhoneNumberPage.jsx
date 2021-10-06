@@ -11,7 +11,6 @@ export default function PhoneNumberPage() {
       <PhoneNumberForm />
       <button
         className="btn btn-block btn-outline-success"
-        style={{ marginTop: "4px" }}
       >
         Connect for free (6pm-9pm)
       </button>

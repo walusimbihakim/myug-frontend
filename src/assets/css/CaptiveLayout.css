@@ -204,11 +204,11 @@ h2 {
   height: 40vh;
   border:1px Solid black;
   padding: 10px;
-  overflow-y: hidden;
+  overflow-y: auto;
 }
 
 .primaryButton {
-  background-color:#e75480;
+  background-color:#e75480 !important;
   margin-top: 4px;
-
+  color: white !important;
 }

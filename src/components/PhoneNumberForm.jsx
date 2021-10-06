@@ -26,8 +26,7 @@ const PhoneNumberForm = () => {
       <input
         type="submit"
         value="Continue"
-        className="btn btn-block btn-primary"
-        style={{ backgroundColor: "#e75480", marginTop: "4px" }}
+        className="btn btn-block primaryButton"
       />
     </form>
   );
