@@ -207,8 +207,11 @@ h2 {
   overflow-y: auto;
 }
 
+button {
+  margin-top: 4px !important;
+}
+
 .primaryButton {
   background-color:#e75480 !important;
-  margin-top: 4px;
   color: white !important;
 }
