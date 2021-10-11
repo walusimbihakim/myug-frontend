@@ -1,28 +1,28 @@
-import React from 'react'
-import { useHistory } from 'react-router-dom';
+import React from "react";
+import { useHistory } from "react-router-dom";
 
 export default function TermsPage() {
-    const history = useHistory()
-    return (
-        <>
-        <h2>Terms and Conditions</h2>
-        <div className="termsBox">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Iusto, sunt? Ullam facere atque, repellat amet incidunt s
-            int fugiat dolorem ipsam accusamus quod officia debitis re
-            m sed quia impedit quo neque?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Iusto, sunt? Ullam facere atque, repellat amet incidunt s
-            int fugiat dolorem ipsam accusamus quod officia debitis re
-            m sed quia impedit quo neque?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Iusto, sunt? Ullam facere atque, repellat amet incidunt s
-            int fugiat dolorem ipsam accusamus quod officia debitis re
-            m sed quia impedit quo neque?
-        </div>
-        <button 
-              className="primaryButton btn btn-block" 
-              onClick={() => {history.goBack()}}>Back</button>
-        </>
-    )
+  const history = useHistory();
+  return (
+    <>
+      <h2>Terms Of Use</h2>
+      <div className="termsBox">
+        <p>By accessing the wireless network, you acknowledge that
+        you're of legal age, you have read and understood and agree to be bound
+        this agreement.</p>
+        <p>You agree not to use the wireless network for any
+        purpose that is unlawful and take full responsibility of your acts. The
+        wireless network is provided "as is" without warranties of any kind,
+        either expressed or implied.</p>
+      </div>
+      <button
+        className="primaryButton btn btn-block"
+        onClick={() => {
+          history.goBack();
+        }}
+      >
+        Back
+      </button>
+    </>
+  );
 }
