@@ -231,3 +231,7 @@ button {
 .row a{
    text-decoration: none !important;
 }
+
+.termsLink a{
+  color: #e75480 !important;
+}

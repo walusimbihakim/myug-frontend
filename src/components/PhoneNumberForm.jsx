@@ -20,7 +20,7 @@ const PhoneNumberForm = () => {
       <div className="form-check">
         <input className="form-check-input" type="checkbox" value="" required />
         <label className="form-check-label" for="flexCheckIndeterminate">
-          I agree to the <Link to="/terms">Terms and Conditions</Link>
+          I agree to the <span className="termsLink"><Link to="/terms">Terms Of Use</Link></span>
         </label>
       </div>
       <input
