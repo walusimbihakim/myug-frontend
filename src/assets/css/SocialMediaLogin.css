@@ -1,0 +1,46 @@
+/* Style all font awesome icons */
+.socialButtons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+.socialbtn {
+    font-size: 30px;
+    width: 5rem;
+    height: 5rem;
+    text-decoration: none;
+    border: none;
+  }
+
+.socialbtn:hover {
+    background-color: #E15990;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+  button a {
+      color: white !important;
+  }
+
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fb-btn {
+    background: #3B5998;
+  }
+  
+  /* Twitter */
+  .twitter-btn {
+    background: #55ACEE;
+  }
+
+  .google-btn {
+      background-color: #dd4b39;
+  }

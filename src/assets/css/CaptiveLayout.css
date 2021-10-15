@@ -226,3 +226,8 @@ button {
   margin-top: 1rem;
   width: 12rem;
 }
+
+
+.row a{
+   text-decoration: none !important;
+}

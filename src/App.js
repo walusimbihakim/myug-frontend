@@ -3,7 +3,7 @@ import { BrowserRouter, Switch } from "react-router-dom";
 import CaptiveLayout from "./components/layouts/CaptiveLayout";
 import LayoutRoute from "./components/routes/LayoutRoute";
 import TermsPage from "./pages/TermsPage";
-
+import SocialMediaLoginPage from "./pages/SocialMediaLoginPage";
 
 function App() {
   return (
@@ -21,6 +21,12 @@ function App() {
           path="/terms"
           layout={CaptiveLayout}
           component={(props) => <TermsPage {...props} />}
+        />
+        <LayoutRoute
+          exact
+          path="/social"
+          layout={CaptiveLayout}
+          component={(props) => <SocialMediaLoginPage {...props} />}
         />
       </Switch>
     </BrowserRouter>
