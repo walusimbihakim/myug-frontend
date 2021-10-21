@@ -1,15 +1,5 @@
 // Import the functions you need from the SDKs you need
-<<<<<<< HEAD
-
-
-
 export const firebaseConfig = {
-=======
-import * as firebase from "firebase/app";
-
-
-const firebaseConfig = {
->>>>>>> 741a0f8487de7100e67525b285fdcc70953a5417
   apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
   authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
   projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
@@ -20,9 +10,5 @@ const firebaseConfig = {
 };
 
 
-<<<<<<< HEAD
 
-=======
-export const firebaseApp = firebase.initializeApp(firebaseConfig)
->>>>>>> 741a0f8487de7100e67525b285fdcc70953a5417
 
