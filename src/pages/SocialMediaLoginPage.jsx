@@ -6,7 +6,6 @@ import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { firebaseConfig } from "../firebase";
 
 
-
 export default function SocialMediaLoginPage() {
   firebase.initializeApp(firebaseConfig)
   const history = useHistory();
